@@ -4,10 +4,9 @@ from typing import Generator
 def my_awesome_gen() -> Generator[str, str, None]:
     output: str = yield 'Hello!'
     while True:
-        if output.isalpha():
-            output = yield output.capitalize()
-        else:
-            output = yield output.lower()
+        output = yield (
+            output.capitalize() if output.isalpha() else output.lower()
+        )
 
 
 g = my_awesome_gen()
