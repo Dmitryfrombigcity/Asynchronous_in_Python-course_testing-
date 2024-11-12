@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "асинхронность в python"
+version = "0.1.0"
+description = ""
+authors = ["Dmitry Morozov <morozov124@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+loguru = "^0.7.2"
+mypy = "^1.13.0"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
