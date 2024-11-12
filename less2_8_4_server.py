@@ -47,9 +47,10 @@ def event_loop(server_socket: socket.socket) -> None:
     with selectors.DefaultSelector() as sel:
         sel.register(server_socket, 1)
         while True:
+            lst: list[tuple[selectors.SelectorKey[socket.socket], int]]
             if lst := sel.select(timeout=2):
                 for sel_key, _ in lst:
-                    sock: socket.socket = sel_key.fileobj  # type: ignore
+                    sock = sel_key.fileobj
                     if sock is server_socket:
                         accept_conn(sock, sel)
                     else:
