@@ -10,6 +10,7 @@ python = "^3.12"
 loguru = "^0.7.2"
 mypy = "^1.13.0"
 requests = "^2.32.3"
+contextvars = "^2.4"
 
 
 [build-system]
