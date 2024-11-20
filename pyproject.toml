@@ -11,6 +11,7 @@ loguru = "^0.7.2"
 mypy = "^1.13.0"
 requests = "^2.32.3"
 contextvars = "^2.4"
+black = "^24.10.0"
 
 
 [build-system]
