@@ -1,0 +1,22 @@
+2024-12-19 00:39:17.63|INFO |MainThread            |        <module>:195|start
+2024-12-19 00:39:17.63|DEBUG|ThreadPoolExecutor-0_0|              f0:23 |func start/done
+2024-12-19 00:39:17.63|DEBUG|ThreadPoolExecutor-0_0|              f1:29 |func start
+2024-12-19 00:39:17.63|DEBUG|MainThread            |              c0:68 |coro start/done
+2024-12-19 00:39:17.64|DEBUG|MainThread            |              c1:74 |coro start
+2024-12-19 00:39:17.64|DEBUG|MainThread            |              c2:84 |coro start
+2024-12-19 00:39:17.64|DEBUG|MainThread            |              c3:94 |coro start
+2024-12-19 00:39:17.64|DEBUG|MainThread            |              cb:144|<Future finished result='f0'>
+2024-12-19 00:39:17.64|DEBUG|MainThread            |              cb:144|<Task finished name='Task-2' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/threadpoll.py:66> result='c0'>
+2024-12-19 00:39:18.64|DEBUG|MainThread            |              cb:144|<Future finished exception=TypeError('oops!')>
+2024-12-19 00:39:18.64|DEBUG|ThreadPoolExecutor-0_0|              f2:39 |func start
+2024-12-19 00:39:18.64|DEBUG|MainThread            |              cb:144|<Task cancelled name='Task-3' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/threadpoll.py:72>>
+2024-12-19 00:39:18.64|DEBUG|MainThread            |              cb:144|<Task cancelled name='Task-4' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/threadpoll.py:82>>
+2024-12-19 00:39:18.64|DEBUG|MainThread            |              cb:144|<Task cancelled name='Task-5' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/threadpoll.py:92>>
+2024-12-19 00:39:18.64|INFO |MainThread            | thread_executor:132|TaskGroup finished
+2024-12-19 00:39:18.64|DEBUG|MainThread            | thread_executor:133|[<Future at 0x7fee17d56600 state=pending>, <Future at 0x7fee17d56450 state=pending>]
+2024-12-19 00:39:20.64|DEBUG|ThreadPoolExecutor-0_0|              f2:43 |func done
+2024-12-19 00:39:20.64|DEBUG|MainThread            |            main:174|[]
+2024-12-19 00:39:20.64|DEBUG|MainThread            |              cb:144|<Future cancelled>
+2024-12-19 00:39:20.64|DEBUG|MainThread            |              cb:144|<Future cancelled>
+2024-12-19 00:39:20.64|DEBUG|MainThread            |              cb:144|<Future finished result='f2'>
+2024-12-19 00:39:20.64|INFO |MainThread            |        <module>:198|end
