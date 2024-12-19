@@ -1,0 +1,29 @@
+2024-12-20 01:34:58.91|INFO |MainProcess   |MainThread   |        <module>:217|start
+2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              c0:77 |coro start/done
+2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              c1:83 |coro start
+2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              c2:93 |coro start
+2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              c3:103|coro start
+2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              cb:166|<Task finished name='Task-2' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:75> result='c0'>
+2024-12-20 01:34:59.04|DEBUG|SpawnProcess-1|MainThread   |              f0:23 |func start/done
+2024-12-20 01:34:59.04|DEBUG|SpawnProcess-1|MainThread   |              f1:29 |func start
+2024-12-20 01:34:59.04|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished result='f0'>
+2024-12-20 01:34:59.92|DEBUG|MainProcess   |MainThread   |              c1:87 |coro done
+2024-12-20 01:34:59.92|DEBUG|MainProcess   |MainThread   |              cb:166|<Task finished name='Task-3' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:81> result='c1'>
+2024-12-20 01:35:00.05|DEBUG|SpawnProcess-1|MainThread   |              f2:39 |func start
+2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished exception=TypeError('oops!')>
+2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |              cb:166|<Task cancelled name='Task-4' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:91>>
+2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |              cb:166|<Task cancelled name='Task-5' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:101>>
+2024-12-20 01:35:00.05|INFO |MainProcess   |MainThread   |process_executor:153|<<TaskGroup finished>>
+2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |process_executor:154|[<function f3 at 0x7f1d559cfba0>, <function f4 at 0x7f1d559cfc40>]
+2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |process_executor:155|['<Future at 0x7f1d556da180 state=running> <function f2 at 0x7f1d559cfb00>', '<Future at 0x7f1d556da330 state=running> <function f3 at 0x7f1d559cfba0>', '<Future at 0x7f1d556da4e0 state=running> <function f4 at 0x7f1d559cfc40>', '<Future at 0x7f1d556da660 state=pending> <function f5 at 0x7f1d559cfce0>']
+2024-12-20 01:35:02.05|DEBUG|SpawnProcess-1|MainThread   |              f2:43 |func done
+2024-12-20 01:35:02.05|DEBUG|SpawnProcess-1|MainThread   |              f3:49 |func start
+2024-12-20 01:35:05.05|DEBUG|SpawnProcess-1|MainThread   |              f3:53 |func done
+2024-12-20 01:35:05.05|DEBUG|SpawnProcess-1|MainThread   |              f4:59 |func start
+2024-12-20 01:35:09.05|DEBUG|SpawnProcess-1|MainThread   |              f4:62 |func done
+2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |            main:195|['<Future at 0x7f1d556da180 state=finished returned str> <function f2 at 0x7f1d559cfb00>', '<Future at 0x7f1d556da330 state=finished returned str> <function f3 at 0x7f1d559cfba0>', '<Future at 0x7f1d556da4e0 state=finished returned str> <function f4 at 0x7f1d559cfc40>', '<Future at 0x7f1d556da660 state=cancelled> <function f5 at 0x7f1d559cfce0>']
+2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |              cb:166|<Future cancelled>
+2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished result='f2'>
+2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished result='f3'>
+2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished result='f4'>
+2024-12-20 01:35:09.07|INFO |MainProcess   |MainThread   |        <module>:220|end

@@ -1,0 +1,57 @@
+Задача -- повторить функционал, что и при ThreadPool.
+Проблемы остались те же, но прибавилась ещё одна.
+Из оригинала:
+
+The following diagram and text describe the data-flow through the system:
+
+|======================= In-process =====================|== Out-of-process ==|
+
++----------+     +----------+       +--------+     +-----------+    +---------+
+|          |  => | Work Ids |       |        |     | Call Q    |    | Process |
+|          |     +----------+       |        |     +-----------+    |  Pool   |
+|          |     | ...      |       |        |     | ...       |    +---------+
+|          |     | 6        |    => |        |  => | 5, call() | => |         |
+|          |     | 7        |       |        |     | ...       |    |         |
+| Process  |     | ...      |       | Local  |     +-----------+    | Process |
+|  Pool    |     +----------+       | Worker |                      |  #1..n  |
+| Executor |                        | Thread |                      |         |
+|          |     +----------- +     |        |     +-----------+    |         |
+|          | <=> | Work Items | <=> |        | <=  | Result Q  | <= |         |
+|          |     +------------+     |        |     +-----------+    |         |
+|          |     | 6: call()  |     |        |     | ...       |    |         |
+|          |     |    future  |     |        |     | 4, result |    |         |
+|          |     | ...        |     |        |     | 3, except |    |         |
++----------+     +------------+     +--------+     +-----------+    +---------+
+
+Executor.submit() called:
+- creates a uniquely numbered _WorkItem and adds it to the "Work Items" dict
+- adds the id of the _WorkItem to the "Work Ids" queue
+
+Local worker thread:
+- reads work ids from the "Work Ids" queue and looks up the corresponding
+  WorkItem from the "Work Items" dict: if the work item has been cancelled then
+  it is simply removed from the dict,
+
+  >>> otherwise it is repackaged as a
+  _CallItem and put in the "Call Q". New _CallItems are put in the "Call Q"
+  until "Call Q" is full.
+  >>> NOTE: the size of the "Call Q" is kept small because
+  calls placed in the "Call Q" can no longer be cancelled with Future.cancel().
+...
+
+Нас интересует последняя часть.
+Есть очередь -> executor._call_queue, в которой подготавливаются функции для процессов,
+если функция попадает сюда, то её concurrent.future меняет статус на running и уже не
+может быть отменена.
+Её размер max_workers + EXTRA_QUEUED_CALLS, где EXTRA_QUEUED_CALLS = 1
+
+В нашем случае размер -> 2
+Функция для логирования -> _show_queue
+
+Анализ:
+На момент выхода из process_executor мы видим список незавершенных футур, функция -> _show_futures,
+количество которых со статусом 'running' превосходит количество заданных max_workers.
+На самом деле это:
+--футуры, функции которых выполняются в процессах;
+--футуры, функции которых зарезервированны в _call_queue.
+Этот факт стоит учитывать при попытке отмены футур.
