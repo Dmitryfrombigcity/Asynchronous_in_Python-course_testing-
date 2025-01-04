@@ -1,29 +1,482 @@
-2024-12-20 01:34:58.91|INFO |MainProcess   |MainThread   |        <module>:217|start
-2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              c0:77 |coro start/done
-2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              c1:83 |coro start
-2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              c2:93 |coro start
-2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              c3:103|coro start
-2024-12-20 01:34:58.91|DEBUG|MainProcess   |MainThread   |              cb:166|<Task finished name='Task-2' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:75> result='c0'>
-2024-12-20 01:34:59.04|DEBUG|SpawnProcess-1|MainThread   |              f0:23 |func start/done
-2024-12-20 01:34:59.04|DEBUG|SpawnProcess-1|MainThread   |              f1:29 |func start
-2024-12-20 01:34:59.04|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished result='f0'>
-2024-12-20 01:34:59.92|DEBUG|MainProcess   |MainThread   |              c1:87 |coro done
-2024-12-20 01:34:59.92|DEBUG|MainProcess   |MainThread   |              cb:166|<Task finished name='Task-3' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:81> result='c1'>
-2024-12-20 01:35:00.05|DEBUG|SpawnProcess-1|MainThread   |              f2:39 |func start
-2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished exception=TypeError('oops!')>
-2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |              cb:166|<Task cancelled name='Task-4' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:91>>
-2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |              cb:166|<Task cancelled name='Task-5' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:101>>
-2024-12-20 01:35:00.05|INFO |MainProcess   |MainThread   |process_executor:153|<<TaskGroup finished>>
-2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |process_executor:154|[<function f3 at 0x7f1d559cfba0>, <function f4 at 0x7f1d559cfc40>]
-2024-12-20 01:35:00.05|DEBUG|MainProcess   |MainThread   |process_executor:155|['<Future at 0x7f1d556da180 state=running> <function f2 at 0x7f1d559cfb00>', '<Future at 0x7f1d556da330 state=running> <function f3 at 0x7f1d559cfba0>', '<Future at 0x7f1d556da4e0 state=running> <function f4 at 0x7f1d559cfc40>', '<Future at 0x7f1d556da660 state=pending> <function f5 at 0x7f1d559cfce0>']
-2024-12-20 01:35:02.05|DEBUG|SpawnProcess-1|MainThread   |              f2:43 |func done
-2024-12-20 01:35:02.05|DEBUG|SpawnProcess-1|MainThread   |              f3:49 |func start
-2024-12-20 01:35:05.05|DEBUG|SpawnProcess-1|MainThread   |              f3:53 |func done
-2024-12-20 01:35:05.05|DEBUG|SpawnProcess-1|MainThread   |              f4:59 |func start
-2024-12-20 01:35:09.05|DEBUG|SpawnProcess-1|MainThread   |              f4:62 |func done
-2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |            main:195|['<Future at 0x7f1d556da180 state=finished returned str> <function f2 at 0x7f1d559cfb00>', '<Future at 0x7f1d556da330 state=finished returned str> <function f3 at 0x7f1d559cfba0>', '<Future at 0x7f1d556da4e0 state=finished returned str> <function f4 at 0x7f1d559cfc40>', '<Future at 0x7f1d556da660 state=cancelled> <function f5 at 0x7f1d559cfce0>']
-2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |              cb:166|<Future cancelled>
-2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished result='f2'>
-2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished result='f3'>
-2024-12-20 01:35:09.07|DEBUG|MainProcess   |MainThread   |              cb:166|<Future finished result='f4'>
-2024-12-20 01:35:09.07|INFO |MainProcess   |MainThread   |        <module>:220|end
+2025-01-04 23:16:17.20|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:16:17.21|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:17.21|DEBUG|MainProcess   |Thread-2     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-2)>
+2025-01-04 23:16:17.21|DEBUG|ForkProcess-1 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-1)>
+2025-01-04 23:16:17.21|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:17.21|DEBUG|ForkProcess-1 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:16:17.21|DEBUG|ForkProcess-1 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-1)>
+2025-01-04 23:16:17.21|DEBUG|MainProcess   |Thread-2     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-2)>
+2025-01-04 23:16:17.21|DEBUG|ForkProcess-1 |MainThread   |                    f1:31 |func start
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |Thread-2     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-2)>
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |Thread-2     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-2)>
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:16:17.22|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:16:17.23|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-2' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:16:17.23|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:16:18.21|DEBUG|ForkProcess-1 |MainThread   |                    f1:35 |func done
+2025-01-04 23:16:18.21|DEBUG|ForkProcess-1 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-1)>
+2025-01-04 23:16:18.22|DEBUG|ForkProcess-1 |MainThread   |                    f2:41 |func start
+2025-01-04 23:16:18.22|DEBUG|MainProcess   |Thread-2     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-2)>
+2025-01-04 23:16:18.22|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:16:18.23|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:16:18.23|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-3' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:16:19.23|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:16:19.23|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-4' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:16:20.22|DEBUG|ForkProcess-1 |MainThread   |                    f2:45 |func done
+2025-01-04 23:16:20.22|DEBUG|ForkProcess-1 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-1)>
+2025-01-04 23:16:20.22|DEBUG|ForkProcess-1 |MainThread   |                    f3:51 |func start
+2025-01-04 23:16:20.22|DEBUG|MainProcess   |Thread-2     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-2)>
+2025-01-04 23:16:20.22|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:16:20.23|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-5' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:16:20.23|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:16:20.23|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>', '<function f5 at 0x7fc86f729260>']
+2025-01-04 23:16:20.23|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86f6fb5f0 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f749250 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f748ec0 state=running> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:16:23.22|DEBUG|ForkProcess-1 |MainThread   |                    f3:55 |func done
+2025-01-04 23:16:23.22|DEBUG|ForkProcess-1 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-1)>
+2025-01-04 23:16:23.22|DEBUG|ForkProcess-1 |MainThread   |                    f4:61 |func start
+2025-01-04 23:16:27.22|DEBUG|ForkProcess-1 |MainThread   |                    f4:64 |func done
+2025-01-04 23:16:27.22|DEBUG|ForkProcess-1 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-1)>
+2025-01-04 23:16:27.22|DEBUG|ForkProcess-1 |MainThread   |                    f5:70 |func start
+2025-01-04 23:16:32.22|DEBUG|ForkProcess-1 |MainThread   |                    f5:73 |func done
+2025-01-04 23:16:32.22|DEBUG|ForkProcess-1 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-1)>
+2025-01-04 23:16:32.22|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86f6fb5f0 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f749250 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f748ec0 state=finished returned str> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:16:32.23|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:16:32.24|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:16:32.24|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:32.24|DEBUG|MainProcess   |Thread-4     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-4)>
+2025-01-04 23:16:32.24|DEBUG|ForkProcess-2 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-2)>
+2025-01-04 23:16:32.24|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:32.24|DEBUG|ForkProcess-2 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:16:32.24|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:32.24|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:32.24|DEBUG|ForkProcess-2 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-2)>
+2025-01-04 23:16:32.24|DEBUG|MainProcess   |Thread-4     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-4)>
+2025-01-04 23:16:32.24|DEBUG|MainProcess   |Thread-4     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-4)>
+2025-01-04 23:16:32.24|DEBUG|ForkProcess-2 |MainThread   |                    f1:31 |func start
+2025-01-04 23:16:32.24|DEBUG|MainProcess   |Thread-4     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-4)>
+2025-01-04 23:16:32.25|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:16:32.25|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:16:32.25|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:16:32.25|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:16:32.25|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:16:32.25|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:16:32.25|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-7' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:16:32.25|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:16:33.24|DEBUG|ForkProcess-2 |MainThread   |                    f1:35 |func done
+2025-01-04 23:16:33.24|DEBUG|ForkProcess-2 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-2)>
+2025-01-04 23:16:33.24|DEBUG|MainProcess   |Thread-4     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-4)>
+2025-01-04 23:16:33.24|DEBUG|ForkProcess-2 |MainThread   |                    f2:41 |func start
+2025-01-04 23:16:33.25|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:16:33.25|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:16:33.25|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-8' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:16:34.25|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:16:34.25|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-9' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:16:35.25|DEBUG|ForkProcess-2 |MainThread   |                    f2:45 |func done
+2025-01-04 23:16:35.25|DEBUG|ForkProcess-2 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-2)>
+2025-01-04 23:16:35.25|DEBUG|ForkProcess-2 |MainThread   |                    f3:51 |func start
+2025-01-04 23:16:35.25|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:16:35.25|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-10' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:16:35.25|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:16:35.25|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>']
+2025-01-04 23:16:35.25|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86f74b770 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f74bbc0 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f74b2f0 state=pending> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:16:38.25|DEBUG|ForkProcess-2 |MainThread   |                    f3:55 |func done
+2025-01-04 23:16:38.25|DEBUG|ForkProcess-2 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-2)>
+2025-01-04 23:16:38.25|DEBUG|ForkProcess-2 |MainThread   |                    f4:61 |func start
+2025-01-04 23:16:42.25|DEBUG|ForkProcess-2 |MainThread   |                    f4:64 |func done
+2025-01-04 23:16:42.25|DEBUG|ForkProcess-2 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-2)>
+2025-01-04 23:16:42.25|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86f74b770 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f74bbc0 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f74b2f0 state=cancelled> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:16:42.26|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:16:42.26|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:16:42.26|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:42.26|DEBUG|ForkProcess-3 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-3)>
+2025-01-04 23:16:42.26|DEBUG|MainProcess   |Thread-6     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-6)>
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:42.27|DEBUG|ForkProcess-3 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:16:42.27|DEBUG|ForkProcess-3 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-3)>
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |Thread-6     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-6)>
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |Thread-6     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-6)>
+2025-01-04 23:16:42.27|DEBUG|ForkProcess-3 |MainThread   |                    f1:31 |func start
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>']
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |Thread-6     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-6)>
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:16:42.27|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:16:42.28|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-12' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:16:42.28|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:16:43.27|DEBUG|ForkProcess-3 |MainThread   |                    f1:35 |func done
+2025-01-04 23:16:43.27|DEBUG|ForkProcess-3 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-3)>
+2025-01-04 23:16:43.27|DEBUG|ForkProcess-3 |MainThread   |                    f2:41 |func start
+2025-01-04 23:16:43.27|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:16:43.27|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:16:43.27|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-13' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:16:44.28|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:16:44.28|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-14' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:16:45.27|DEBUG|ForkProcess-3 |MainThread   |                    f2:45 |func done
+2025-01-04 23:16:45.27|DEBUG|ForkProcess-3 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-3)>
+2025-01-04 23:16:45.27|DEBUG|MainProcess   |Thread-6     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-6)>
+2025-01-04 23:16:45.27|DEBUG|MainProcess   |Thread-6     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-6)>
+2025-01-04 23:16:45.27|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:16:45.27|DEBUG|ForkProcess-3 |MainThread   |                    f3:51 |func start
+2025-01-04 23:16:45.27|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-15' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:16:45.28|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:16:45.28|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>', '<function f5 at 0x7fc86f729260>']
+2025-01-04 23:16:45.28|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86f748320 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d56cce0 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f74afc0 state=running> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:16:48.27|DEBUG|ForkProcess-3 |MainThread   |                    f3:55 |func done
+2025-01-04 23:16:48.28|DEBUG|ForkProcess-3 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-3)>
+2025-01-04 23:16:48.28|DEBUG|ForkProcess-3 |MainThread   |                    f4:61 |func start
+2025-01-04 23:16:52.28|DEBUG|ForkProcess-3 |MainThread   |                    f4:64 |func done
+2025-01-04 23:16:52.28|DEBUG|ForkProcess-3 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-3)>
+2025-01-04 23:16:52.28|DEBUG|ForkProcess-3 |MainThread   |                    f5:70 |func start
+2025-01-04 23:16:57.28|DEBUG|ForkProcess-3 |MainThread   |                    f5:73 |func done
+2025-01-04 23:16:57.28|DEBUG|ForkProcess-3 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-3)>
+2025-01-04 23:16:57.28|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86f748320 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d56cce0 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f74afc0 state=finished returned str> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:16:57.28|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:16:57.29|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:16:57.29|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:57.29|DEBUG|MainProcess   |Thread-8     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-8)>
+2025-01-04 23:16:57.29|DEBUG|ForkProcess-4 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-4)>
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:57.30|DEBUG|ForkProcess-4 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:16:57.30|DEBUG|ForkProcess-4 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-4)>
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |Thread-8     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-8)>
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |Thread-8     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-8)>
+2025-01-04 23:16:57.30|DEBUG|ForkProcess-4 |MainThread   |                    f1:31 |func start
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>']
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |Thread-8     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-8)>
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-17' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:16:57.30|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:16:58.30|DEBUG|ForkProcess-4 |MainThread   |                    f1:35 |func done
+2025-01-04 23:16:58.30|DEBUG|ForkProcess-4 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-4)>
+2025-01-04 23:16:58.30|DEBUG|ForkProcess-4 |MainThread   |                    f2:41 |func start
+2025-01-04 23:16:58.30|DEBUG|MainProcess   |Thread-8     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-8)>
+2025-01-04 23:16:58.30|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:16:58.30|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:16:58.30|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-18' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:16:59.30|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:16:59.30|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-19' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:17:00.30|DEBUG|ForkProcess-4 |MainThread   |                    f2:45 |func done
+2025-01-04 23:17:00.30|DEBUG|ForkProcess-4 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-4)>
+2025-01-04 23:17:00.30|DEBUG|ForkProcess-4 |MainThread   |                    f3:51 |func start
+2025-01-04 23:17:00.30|DEBUG|MainProcess   |Thread-8     |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-8)>
+2025-01-04 23:17:00.30|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:17:00.30|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-20' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:17:00.30|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:17:00.30|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>', '<function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:00.30|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86d56e870 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f74b020 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86d56ef60 state=running> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:03.30|DEBUG|ForkProcess-4 |MainThread   |                    f3:55 |func done
+2025-01-04 23:17:03.30|DEBUG|ForkProcess-4 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-4)>
+2025-01-04 23:17:03.30|DEBUG|ForkProcess-4 |MainThread   |                    f4:61 |func start
+2025-01-04 23:17:07.30|DEBUG|ForkProcess-4 |MainThread   |                    f4:64 |func done
+2025-01-04 23:17:07.30|DEBUG|ForkProcess-4 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-4)>
+2025-01-04 23:17:07.31|DEBUG|ForkProcess-4 |MainThread   |                    f5:70 |func start
+2025-01-04 23:17:12.31|DEBUG|ForkProcess-4 |MainThread   |                    f5:73 |func done
+2025-01-04 23:17:12.31|DEBUG|ForkProcess-4 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-4)>
+2025-01-04 23:17:12.31|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86d56e870 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f74b020 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86d56ef60 state=finished returned str> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:12.31|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:17:12.32|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:17:12.32|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:12.32|DEBUG|MainProcess   |Thread-10    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-10)>
+2025-01-04 23:17:12.32|DEBUG|ForkProcess-5 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-5)>
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:12.33|DEBUG|ForkProcess-5 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:12.33|DEBUG|ForkProcess-5 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-5)>
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |Thread-10    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-10)>
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |Thread-10    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-10)>
+2025-01-04 23:17:12.33|DEBUG|ForkProcess-5 |MainThread   |                    f1:31 |func start
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>']
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |Thread-10    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-10)>
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:17:12.33|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:17:12.34|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-22' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:17:12.34|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:17:13.33|DEBUG|ForkProcess-5 |MainThread   |                    f1:35 |func done
+2025-01-04 23:17:13.33|DEBUG|ForkProcess-5 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-5)>
+2025-01-04 23:17:13.33|DEBUG|ForkProcess-5 |MainThread   |                    f2:41 |func start
+2025-01-04 23:17:13.33|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:17:13.34|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:17:13.34|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-23' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:17:14.33|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:17:14.34|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-24' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:17:15.33|DEBUG|ForkProcess-5 |MainThread   |                    f2:45 |func done
+2025-01-04 23:17:15.33|DEBUG|ForkProcess-5 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-5)>
+2025-01-04 23:17:15.33|DEBUG|ForkProcess-5 |MainThread   |                    f3:51 |func start
+2025-01-04 23:17:15.33|DEBUG|MainProcess   |Thread-10    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-10)>
+2025-01-04 23:17:15.33|DEBUG|MainProcess   |Thread-10    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-10)>
+2025-01-04 23:17:15.33|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:17:15.34|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-25' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:17:15.34|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:17:15.34|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>', '<function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:15.34|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86d56dc10 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f66ede0 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f74ba70 state=running> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:18.33|DEBUG|ForkProcess-5 |MainThread   |                    f3:55 |func done
+2025-01-04 23:17:18.33|DEBUG|ForkProcess-5 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-5)>
+2025-01-04 23:17:18.33|DEBUG|ForkProcess-5 |MainThread   |                    f4:61 |func start
+2025-01-04 23:17:22.33|DEBUG|ForkProcess-5 |MainThread   |                    f4:64 |func done
+2025-01-04 23:17:22.33|DEBUG|ForkProcess-5 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-5)>
+2025-01-04 23:17:22.33|DEBUG|ForkProcess-5 |MainThread   |                    f5:70 |func start
+2025-01-04 23:17:27.33|DEBUG|ForkProcess-5 |MainThread   |                    f5:73 |func done
+2025-01-04 23:17:27.34|DEBUG|ForkProcess-5 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-5)>
+2025-01-04 23:17:27.34|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86d56dc10 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f66ede0 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f74ba70 state=finished returned str> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:27.34|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:17:27.35|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:17:27.35|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:27.35|DEBUG|ForkProcess-6 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-6)>
+2025-01-04 23:17:27.35|DEBUG|MainProcess   |Thread-12    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-12)>
+2025-01-04 23:17:27.35|DEBUG|ForkProcess-6 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:17:27.35|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:27.35|DEBUG|ForkProcess-6 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-6)>
+2025-01-04 23:17:27.35|DEBUG|MainProcess   |Thread-12    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-12)>
+2025-01-04 23:17:27.35|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:27.35|DEBUG|ForkProcess-6 |MainThread   |                    f1:31 |func start
+2025-01-04 23:17:27.35|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:27.35|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |Thread-12    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-12)>
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |Thread-12    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-12)>
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-27' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:17:27.36|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:17:28.35|DEBUG|ForkProcess-6 |MainThread   |                    f1:35 |func done
+2025-01-04 23:17:28.35|DEBUG|ForkProcess-6 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-6)>
+2025-01-04 23:17:28.36|DEBUG|ForkProcess-6 |MainThread   |                    f2:41 |func start
+2025-01-04 23:17:28.36|DEBUG|MainProcess   |Thread-12    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-12)>
+2025-01-04 23:17:28.36|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:17:28.36|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:17:28.36|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-28' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:17:29.36|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:17:29.36|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-29' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:17:30.36|DEBUG|ForkProcess-6 |MainThread   |                    f2:45 |func done
+2025-01-04 23:17:30.36|DEBUG|ForkProcess-6 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-6)>
+2025-01-04 23:17:30.36|DEBUG|ForkProcess-6 |MainThread   |                    f3:51 |func start
+2025-01-04 23:17:30.36|DEBUG|MainProcess   |Thread-12    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-12)>
+2025-01-04 23:17:30.36|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:17:30.36|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-30' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:17:30.36|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:17:30.36|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>', '<function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:30.36|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86d5915e0 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d5904d0 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f749460 state=running> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:33.36|DEBUG|ForkProcess-6 |MainThread   |                    f3:55 |func done
+2025-01-04 23:17:33.36|DEBUG|ForkProcess-6 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-6)>
+2025-01-04 23:17:33.36|DEBUG|ForkProcess-6 |MainThread   |                    f4:61 |func start
+2025-01-04 23:17:37.36|DEBUG|ForkProcess-6 |MainThread   |                    f4:64 |func done
+2025-01-04 23:17:37.36|DEBUG|ForkProcess-6 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-6)>
+2025-01-04 23:17:37.36|DEBUG|ForkProcess-6 |MainThread   |                    f5:70 |func start
+2025-01-04 23:17:42.36|DEBUG|ForkProcess-6 |MainThread   |                    f5:73 |func done
+2025-01-04 23:17:42.36|DEBUG|ForkProcess-6 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-6)>
+2025-01-04 23:17:42.36|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86d5915e0 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d5904d0 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f749460 state=finished returned str> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:42.37|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:17:42.37|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:17:42.37|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:42.38|DEBUG|ForkProcess-7 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-7)>
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |Thread-14    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-14)>
+2025-01-04 23:17:42.38|DEBUG|ForkProcess-7 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:17:42.38|DEBUG|ForkProcess-7 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-7)>
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |Thread-14    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-14)>
+2025-01-04 23:17:42.38|DEBUG|ForkProcess-7 |MainThread   |                    f1:31 |func start
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |Thread-14    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-14)>
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |Thread-14    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-14)>
+2025-01-04 23:17:42.38|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:17:42.39|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:17:42.39|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:17:42.39|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:17:42.39|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-32' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:17:42.39|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:17:43.38|DEBUG|ForkProcess-7 |MainThread   |                    f1:35 |func done
+2025-01-04 23:17:43.38|DEBUG|ForkProcess-7 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-7)>
+2025-01-04 23:17:43.38|DEBUG|ForkProcess-7 |MainThread   |                    f2:41 |func start
+2025-01-04 23:17:43.38|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:17:43.39|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:17:43.39|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-33' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:17:44.39|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:17:44.39|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-34' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:17:45.38|DEBUG|ForkProcess-7 |MainThread   |                    f2:45 |func done
+2025-01-04 23:17:45.38|DEBUG|ForkProcess-7 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-7)>
+2025-01-04 23:17:45.38|DEBUG|ForkProcess-7 |MainThread   |                    f3:51 |func start
+2025-01-04 23:17:45.38|DEBUG|MainProcess   |Thread-14    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-14)>
+2025-01-04 23:17:45.38|DEBUG|MainProcess   |Thread-14    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-14)>
+2025-01-04 23:17:45.39|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:17:45.39|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-35' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:17:45.39|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:17:45.39|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>', '<function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:45.39|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86f6fb1d0 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d56e360 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86d590830 state=running> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:48.38|DEBUG|ForkProcess-7 |MainThread   |                    f3:55 |func done
+2025-01-04 23:17:48.38|DEBUG|ForkProcess-7 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-7)>
+2025-01-04 23:17:48.38|DEBUG|ForkProcess-7 |MainThread   |                    f4:61 |func start
+2025-01-04 23:17:52.39|DEBUG|ForkProcess-7 |MainThread   |                    f4:64 |func done
+2025-01-04 23:17:52.39|DEBUG|ForkProcess-7 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-7)>
+2025-01-04 23:17:52.39|DEBUG|ForkProcess-7 |MainThread   |                    f5:70 |func start
+2025-01-04 23:17:57.39|DEBUG|ForkProcess-7 |MainThread   |                    f5:73 |func done
+2025-01-04 23:17:57.39|DEBUG|ForkProcess-7 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-7)>
+2025-01-04 23:17:57.39|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86f6fb1d0 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d56e360 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86d590830 state=finished returned str> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:17:57.39|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:17:57.40|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:17:57.40|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:57.40|DEBUG|MainProcess   |Thread-16    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-16)>
+2025-01-04 23:17:57.40|DEBUG|ForkProcess-8 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-8)>
+2025-01-04 23:17:57.40|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:57.40|DEBUG|ForkProcess-8 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:17:57.40|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:17:57.40|DEBUG|ForkProcess-8 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-8)>
+2025-01-04 23:17:57.40|DEBUG|MainProcess   |Thread-16    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-16)>
+2025-01-04 23:17:57.40|DEBUG|MainProcess   |Thread-16    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-16)>
+2025-01-04 23:17:57.41|DEBUG|ForkProcess-8 |MainThread   |                    f1:31 |func start
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>']
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>']
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>']
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |Thread-16    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-16)>
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-37' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:17:57.41|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:17:58.41|DEBUG|ForkProcess-8 |MainThread   |                    f1:35 |func done
+2025-01-04 23:17:58.41|DEBUG|ForkProcess-8 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-8)>
+2025-01-04 23:17:58.41|DEBUG|ForkProcess-8 |MainThread   |                    f2:41 |func start
+2025-01-04 23:17:58.41|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:17:58.41|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:17:58.41|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-38' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:17:59.41|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:17:59.41|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-39' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:18:00.41|DEBUG|ForkProcess-8 |MainThread   |                    f2:45 |func done
+2025-01-04 23:18:00.41|DEBUG|ForkProcess-8 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-8)>
+2025-01-04 23:18:00.41|DEBUG|ForkProcess-8 |MainThread   |                    f3:51 |func start
+2025-01-04 23:18:00.41|DEBUG|MainProcess   |Thread-16    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-16)>
+2025-01-04 23:18:00.41|DEBUG|MainProcess   |Thread-16    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-16)>
+2025-01-04 23:18:00.41|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:18:00.41|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-40' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:18:00.41|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:18:00.41|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>', '<function f5 at 0x7fc86f729260>']
+2025-01-04 23:18:00.41|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86f7489b0 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d593a40 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f74b7d0 state=running> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:18:03.41|DEBUG|ForkProcess-8 |MainThread   |                    f3:55 |func done
+2025-01-04 23:18:03.41|DEBUG|ForkProcess-8 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-8)>
+2025-01-04 23:18:03.41|DEBUG|ForkProcess-8 |MainThread   |                    f4:61 |func start
+2025-01-04 23:18:07.41|DEBUG|ForkProcess-8 |MainThread   |                    f4:64 |func done
+2025-01-04 23:18:07.41|DEBUG|ForkProcess-8 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-8)>
+2025-01-04 23:18:07.41|DEBUG|ForkProcess-8 |MainThread   |                    f5:70 |func start
+2025-01-04 23:18:12.41|DEBUG|ForkProcess-8 |MainThread   |                    f5:73 |func done
+2025-01-04 23:18:12.41|DEBUG|ForkProcess-8 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-8)>
+2025-01-04 23:18:12.42|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86f7489b0 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d593a40 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86f74b7d0 state=finished returned str> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:18:12.42|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:18:12.42|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:18:12.42|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |Thread-18    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-18)>
+2025-01-04 23:18:12.43|DEBUG|ForkProcess-9 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-9)>
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:18:12.43|DEBUG|ForkProcess-9 |MainThread   |                    f0:25 |func start/done
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:18:12.43|DEBUG|ForkProcess-9 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-9)>
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |Thread-18    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-18)>
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |Thread-18    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-18)>
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>']
+2025-01-04 23:18:12.43|DEBUG|ForkProcess-9 |MainThread   |                    f1:31 |func start
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>']
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |Thread-18    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-18)>
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:18:12.43|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-42' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:18:12.44|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:18:13.43|DEBUG|ForkProcess-9 |MainThread   |                    f1:35 |func done
+2025-01-04 23:18:13.43|DEBUG|ForkProcess-9 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-9)>
+2025-01-04 23:18:13.43|DEBUG|ForkProcess-9 |MainThread   |                    f2:41 |func start
+2025-01-04 23:18:13.43|DEBUG|MainProcess   |Thread-18    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-18)>
+2025-01-04 23:18:13.43|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:18:13.43|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:18:13.44|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-43' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:18:14.44|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:18:14.44|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-44' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:18:15.43|DEBUG|ForkProcess-9 |MainThread   |                    f2:45 |func done
+2025-01-04 23:18:15.43|DEBUG|ForkProcess-9 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-9)>
+2025-01-04 23:18:15.43|DEBUG|MainProcess   |Thread-18    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-18)>
+2025-01-04 23:18:15.44|DEBUG|ForkProcess-9 |MainThread   |                    f3:51 |func start
+2025-01-04 23:18:15.44|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:18:15.44|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-45' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:18:15.44|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:18:15.44|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>', '<function f5 at 0x7fc86f729260>']
+2025-01-04 23:18:15.44|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86f74bf80 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f748b60 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86d56fa70 state=running> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:18:18.44|DEBUG|ForkProcess-9 |MainThread   |                    f3:55 |func done
+2025-01-04 23:18:18.44|DEBUG|ForkProcess-9 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-9)>
+2025-01-04 23:18:18.44|DEBUG|ForkProcess-9 |MainThread   |                    f4:61 |func start
+2025-01-04 23:18:22.44|DEBUG|ForkProcess-9 |MainThread   |                    f4:64 |func done
+2025-01-04 23:18:22.44|DEBUG|ForkProcess-9 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-9)>
+2025-01-04 23:18:22.44|DEBUG|ForkProcess-9 |MainThread   |                    f5:70 |func start
+2025-01-04 23:18:27.44|DEBUG|ForkProcess-9 |MainThread   |                    f5:73 |func done
+2025-01-04 23:18:27.44|DEBUG|ForkProcess-9 |MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-9)>
+2025-01-04 23:18:27.44|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86f74bf80 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86f748b60 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86d56fa70 state=finished returned str> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:18:27.45|INFO |MainProcess   |MainThread   |                _setup:226|end
+2025-01-04 23:18:27.45|INFO |MainProcess   |MainThread   |                _setup:221|start
+2025-01-04 23:18:27.45|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:18:27.45|DEBUG|MainProcess   |Thread-20    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-20)>
+2025-01-04 23:18:27.45|DEBUG|ForkProcess-10|MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-10)>
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:18:27.46|DEBUG|ForkProcess-10|MainThread   |                    f0:25 |func start/done
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                  main:211|[]
+2025-01-04 23:18:27.46|DEBUG|ForkProcess-10|MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-10)>
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |Thread-20    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-20)>
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |Thread-20    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-20)>
+2025-01-04 23:18:27.46|DEBUG|ForkProcess-10|MainThread   |                    f1:31 |func start
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |Thread-20    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-20)>
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                  main:211|['<function f2 at 0x7fc86f6fea20>', '<function f3 at 0x7fc86f729120>']
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                    c0:79 |coro start/done
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                    c1:85 |coro start
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                    c2:95 |coro start
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                    c3:105|coro start
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-47' coro=<c0() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:77> result='c0'>
+2025-01-04 23:18:27.46|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f0'>
+2025-01-04 23:18:28.46|DEBUG|ForkProcess-10|MainThread   |                    f1:35 |func done
+2025-01-04 23:18:28.46|DEBUG|ForkProcess-10|MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-10)>
+2025-01-04 23:18:28.46|DEBUG|ForkProcess-10|MainThread   |                    f2:41 |func start
+2025-01-04 23:18:28.46|DEBUG|MainProcess   |Thread-20    |add_call_item_to_queue:34 |self.wlock=<Lock(owner=MainProcess|Thread-20)>
+2025-01-04 23:18:28.46|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f1'>
+2025-01-04 23:18:28.46|DEBUG|MainProcess   |MainThread   |                    c1:89 |coro done
+2025-01-04 23:18:28.46|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-48' coro=<c1() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:83> result='c1'>
+2025-01-04 23:18:29.46|DEBUG|MainProcess   |MainThread   |                    c2:99 |coro done
+2025-01-04 23:18:29.47|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-49' coro=<c2() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:93> result='c2'>
+2025-01-04 23:18:30.46|DEBUG|ForkProcess-10|MainThread   |                    f2:45 |func done
+2025-01-04 23:18:30.46|DEBUG|ForkProcess-10|MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-10)>
+2025-01-04 23:18:30.46|DEBUG|ForkProcess-10|MainThread   |                    f3:51 |func start
+2025-01-04 23:18:30.46|DEBUG|MainProcess   |MainThread   |                    cb:175|<Future finished result='f2'>
+2025-01-04 23:18:30.47|DEBUG|MainProcess   |MainThread   |                    cb:175|<Task finished name='Task-50' coro=<c3() done, defined at /home/me/PycharmProjects/Асинхронность в Python/les3_15_8/processpool.py:103> exception=TypeError('oops!')>
+2025-01-04 23:18:30.47|INFO |MainProcess   |MainThread   |      process_executor:158|<<TaskGroup finished>>
+2025-01-04 23:18:30.47|DEBUG|MainProcess   |MainThread   |      process_executor:159|['<function f4 at 0x7fc86f7291c0>']
+2025-01-04 23:18:30.47|DEBUG|MainProcess   |MainThread   |      process_executor:160|['<Future at 0x7fc86d5a1790 state=running> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d591d00 state=running> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86d5a2330 state=pending> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:18:33.46|DEBUG|ForkProcess-10|MainThread   |                    f3:55 |func done
+2025-01-04 23:18:33.46|DEBUG|ForkProcess-10|MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-10)>
+2025-01-04 23:18:33.46|DEBUG|ForkProcess-10|MainThread   |                    f4:61 |func start
+2025-01-04 23:18:37.46|DEBUG|ForkProcess-10|MainThread   |                    f4:64 |func done
+2025-01-04 23:18:37.46|DEBUG|ForkProcess-10|MainThread   |       _process_worker:94 |rlock=<Lock(owner=ForkProcess-10)>
+2025-01-04 23:18:37.47|DEBUG|MainProcess   |MainThread   |                  main:215|['<Future at 0x7fc86d5a1790 state=finished returned str> <function f3 at 0x7fc86f729120>', '<Future at 0x7fc86d591d00 state=finished returned str> <function f4 at 0x7fc86f7291c0>', '<Future at 0x7fc86d5a2330 state=cancelled> <function f5 at 0x7fc86f729260>']
+2025-01-04 23:18:37.47|INFO |MainProcess   |MainThread   |                _setup:226|end
