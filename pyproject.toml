@@ -17,6 +17,8 @@ contextvars = "^2.4"
 black = "^24.10.0"
 pytest = "^8.3.4"
 pytest-asyncio = "^0.25.0"
+pytest-repeat = "^0.9.3"
+pytest-timeout = "^2.3.1"
 
 
 [build-system]
